@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+main {
+  padding: 2rem;
+}
+
+.endorsement-section {
+  text-align: center;
+}
+
+.endorsement-logos {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 1rem;
+  scroll-snap-type: x mandatory;
+}
+
+.logo {
+  flex: 0 0 auto;
+  width: 200px;
+  height: 300px;
+  scroll-snap-align: start;
+  background: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.logo img {
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain;
+}
+
+.brand-details {
+  background-color: black;
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+  display: none;
+}
+
+.brand-details.active {
+  display: block;
+}
+
+#brand-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+#brand-description {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}

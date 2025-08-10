@@ -327,6 +327,8 @@ img {
     object-fit: cover;
 }
 
+
+
 /* Horizontal scroll — Businessman */
 .BusinessmanSticky_Parent {
   height: 500vh;
@@ -560,6 +562,8 @@ align-items: stretch;
   flex: 1;
 }
 
+
+
 /*The Man horizontal scroll*/
 .ManSticky_Parent {
   height: 500vh;
@@ -649,12 +653,6 @@ align-items: stretch;
   white-space: nowrap;
 }
 
-.BusinessmanSticky,
-.ManSticky {
-  background-color: rgb(0, 0, 0);
-  z-index: 0;
-}
-
 /* Keep 'The Businessman' text horizontal next to image */
 .ManScroll_section .slide:first-child {
   display: flex;
@@ -696,6 +694,9 @@ align-items: stretch;
   line-height: 1.4;
   max-width: 60ch;          /* readable line length */
 }
+
+
+
 
 /*Brunson Appearances*/
 .brunson-collage2 {
@@ -765,6 +766,8 @@ align-items: stretch;
   .tile-right-grid { grid-column: auto; grid-row: auto; grid-template-columns: 1fr; }
 }
 
+
+
 /*Body Armor ad*/
 .BodyArmorAd {
   width: 100%;
@@ -792,3 +795,152 @@ align-items: stretch;
   cursor: pointer;
 }
 .unmute-btn.hidden { display: none; }
+
+/* Force all-black inside "The Man" */
+.ManSticky_Parent { background: #000 !important; }
+.ManSticky { background: #000 !important; }
+.ManScroll_section { background: #000 !important; }
+.ManScroll_section .slide { background: #000 !important; }
+
+
+
+
+/* Horizontal scroll — The Athelete */
+.AtheleteSticky_Parent {
+  height: 500vh;
+}
+
+.AtheleteSticky {
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.AtheleteScroll_section {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: max-content;
+  display: flex;
+  gap: 5vw;
+  padding-left: 0;
+  will-change: transform;
+}
+
+.AtheleteScroll_section .slide {
+  display: flex;
+  align-items: center;
+  width: 1800px;
+  margin-right: 50px;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+}
+
+.AtheleteScroll_section img {
+  width: 60%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+.AtheleteScroll_section .caption {
+  margin-left: 30px;
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+.AtheleteScroll_section img.athletesmall1 {
+  height: 900px;
+  width: 1800px;
+}
+
+.AtheleteScroll_section img.athletesmall2 {
+  width:750px; 
+  height: 750px;
+  padding-left: 100px;
+}
+
+.AtheleteScroll_section img.athletesmall3 {
+  height: 1000px;
+}
+.AtheleteScroll_section img.athletebig5 {
+  width: 550px;
+  height: 700px;
+}
+
+.AtheleteScroll_section img.athleteBig6 {
+  width: 550px;
+  height: 700px;
+}
+
+.AtheleteScroll_section img.athleteBig7 {
+  width: 550px;
+  height: 700px;
+}
+
+.AtheleteSticky_Parent {
+  background-color: white;
+}
+
+.Athelete {
+  background-color: white !important; /* solid white */
+  padding: 20px;
+  display: inline-block;
+  white-space: nowrap;
+  color: rgb(255, 255, 255) !important; /* black text */
+}
+
+.Athelete * {
+  color: rgb(255, 255, 255) !important; /* makes sure all child elements' text is black */
+  background-color: transparent; /* removes stripes from inner elements */
+}
+
+.Athelete-text {
+  writing-mode: horizontal-tb;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+/* Keep 'The Businessman' text horizontal next to image */
+.AtheleteScroll_section .slide:first-child {
+  display: flex;
+  align-items: center;
+  gap: 20px;         /* space between image and text */
+}
+
+.AtheleteScroll_section .slide:first-child img.small1 {
+  flex: 0 0 auto;    /* image keeps natural size */
+}
+
+.AtheleteScroll_section .slide:first-child .caption {
+  flex: 1;           /* take remaining width */
+  white-space: normal;
+  line-height: 1.4;
+}
+
+/* Let slides size to content (no squish) */
+.AtheleteScroll_section .slide {
+  flex: 0 0 auto;           /* don't let container shrink */
+  gap: 24px;                /* space between image and text */
+}
+
+/* First slide only: make it wider so caption has room */
+.AtheleteScroll_section .slide:first-child {
+  width: 1830px;            /* adjust until it feels right (e.g., 2400–3000px) */
+}
+
+/* Keep the big image size you want, but don't let it steal caption space */
+.AtheleteScroll_section .slide:first-child img.small1 {
+  flex: 0 0 auto;           /* preserve its size */
+}
+
+/* Make the caption actually use the remaining width, horizontally */
+.AtheleteScroll_section .slide:first-child .caption {
+  flex: 1 1 auto;           
+  white-space: normal;      
+  word-break: break-word;
+  line-height: 1.4;
+  max-width: 60ch;          /* readable line length */
+}

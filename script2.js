@@ -1,3 +1,4 @@
+function clamp(v, min, max) { return Math.min(Math.max(v, min), max); }
 document.addEventListener('DOMContentLoaded', () => {
   // ----- Sticky sections: "The Philanthropist" -----
   const stickySections = [...document.querySelectorAll('.sticky')];
@@ -345,7 +346,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!video || !btn) return;
 
     let hasLoaded = false;
-    const updateBtn = () => { btn.textContent = video.muted ? 'Unmute 🔊' : 'Mute 🔇'; };
+    const updateBtn = () => { btn.textContent = video.muted ? 'Unmute ' : 'Mute '; };
 
     const io = new IntersectionObserver(async ([entry]) => {
       if (entry.isIntersecting && entry.intersectionRatio >= 0.6) {
@@ -376,3 +377,66 @@ document.addEventListener('DOMContentLoaded', () => {
     updateBtn();
   })();
 });
+  // ----- The Athlete horizontal scroll -----
+  const athleteSection = document.querySelector('.AtheleteScroll_section');
+
+  const athleteImages = [
+    { src: 'assets/images/Three-Celebration.png', text: 'The Athlete', size: 'athletesmall1' },
+    { src: 'assets/images/Stevenson.png', text: 'Training. Strength. Mobility.', size: 'athletesmall2' },
+    { src: 'assets/images/Villinova-Freshmen.png', text: 'Reps. Footwork. Shot volume.', size: 'athletesmall3' },
+    { src: 'assets/images/Player-Of-The-Year.png', text: 'Game day focus + recovery.', size: 'athletebig1' },
+    { src: 'assets/images/Brunson-Draft.png', text: '2018', size: 'athletebig2' },
+    { src: 'assets/images/22-PLayoffs.png', text: "2022 playoff run", size: 'athletebig3' },
+    { src: 'assets/images/Free-Agent.png', text: "Signed to the Knicks", size: 'athletebig4'},
+    { src: 'assets/images/All-Star-Jersey.png', text: "All Star jersey", size: 'athletebig5'},
+    { src: 'assets/images/24-25poster.png', text: "2024-2025 knicks run", size: "athleteBig6"},
+    { src: 'assets/images/Clutch.png', text: "Clutch Player of the Year", size: "athleteBig7"}
+  ];
+
+  if (athleteSection) {
+    athleteImages.forEach(item => {
+      const slide = document.createElement('div');
+      slide.classList.add('slide');
+
+      const img = document.createElement('img');
+      img.src = item.src;
+      img.classList.add(item.size);
+
+      const cap = document.createElement('div');
+      cap.classList.add('caption');
+      cap.textContent = item.text;
+
+      slide.appendChild(img);
+      slide.appendChild(cap);
+      athleteSection.appendChild(slide);
+    });
+
+    function transformAthlete() {
+      const sectionParent = document.querySelector('.AtheleteSticky_Parent');
+      if (!sectionParent) return;
+      const sticky = sectionParent.querySelector('.AtheleteSticky');
+      if (!sticky) return;
+      const track = sticky.querySelector('.AtheleteScroll_section');
+      if (!track) return;
+
+      const offsetTop = sectionParent.offsetTop;
+      const stickyHeight = sectionParent.clientHeight;
+      const trackWidth = track.scrollWidth;
+      const maxX = Math.max(0, trackWidth - window.innerWidth);
+
+      const progress = clamp(
+        (window.scrollY - offsetTop) / (stickyHeight - window.innerHeight),
+        0, 1
+      );
+
+      const x = -maxX * progress;
+      track.style.transform = `translate3d(${x}px, 0, 0)`;
+    }
+
+    window.addEventListener('scroll', transformAthlete);
+    window.addEventListener('resize', transformAthlete);
+    window.addEventListener('load', transformAthlete);
+    transformAthlete();
+  } else {
+    console.warn('No .AtheleteScroll_section found');
+  }

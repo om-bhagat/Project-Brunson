@@ -161,17 +161,32 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     {
       src: 'assets/images/JordynBrunson.png',
-      text: 'In 2023, Jalen Brunson partners with Bose as a brand ambassador, promoting products on social media, attending sponsored events, and gifting Bose earbuds to teammates, showcasing the collaboration through endorsements, public appearances, and goodwill gestures.',
+      text: 'In 2023, Jordyn Brunson has been a constant source of support, grounding Jalen through every high and low. Their relationship reflects mutual respect, understanding, and shared values, giving him balance and perspective both on and off the court.',
       size: 'small2'
     },
     {
-      src: 'assets/images/FahertyXBrunson.png',
-      text: 'In 2021, Jalen Brunson’s partnership with Faherty centers on an exclusive capsule collection. It features his mantra, “The Magic Is in the Work,” includes seven limited-edition pieces like hoodies, T-shirts, and hats, and supports his foundation through charitable donations.',
+      src: 'assets/images/Jay-Wright.png',
+      text: 'Under Coach Jay Wright at Villanova, Jalen Brunson learned discipline, poise, and championship habits. Wright’s mentorship instilled leadership qualities and a team-first mentality, shaping Brunson’s game IQ and setting the foundation for his professional success.',
       size: 'small3'
     },
     {
-      src: 'assets/images/NikeXBrunson.png',
-      text: "Jalen Brunson partners with Nike, wearing their gear—especially Kobe Bryant shoes—in games, joining marketing campaigns, and earning performance bonuses while reinforcing a strong, loyal brand connection.",
+      src: 'assets/images/Speaking-To-Kids.png',
+      text: "Through his Second Round Foundation and personal outreach, Jalen Brunson invests in underserved communities. He values mentorship, education, and opportunity, using his platform to inspire youth and create pathways for success beyond the basketball court.",
+      size: 'big1'
+    },
+    {
+      src: 'assets/images/Walking-NYC.png',
+      text: "New York City’s energy fuels Jalen Brunson’s drive. He embraces its fast pace, tough crowds, and bright lights, thriving under pressure and connecting with fans who value hard work, grit, and a relentless competitive spirit.",
+      size: 'big1'
+    },
+    {
+      src: 'assets/images/Knicks-Huddle.png',
+      text: "Brunson leads with action and words, earning trust through consistency and commitment. He builds bonds off the court, values honest communication, and ensures every teammate feels respected, fostering a culture of accountability, unity, and shared goals.",
+      size: 'big1'
+    },
+    {
+      src: 'assets/images/Ice-Bath.png',
+      text: "Postgame, Jalen Brunson embraces the ice bath ritual. It’s a physical reset and mental cooldown, helping his body recover from the grind, reduce soreness, and prepare for the next challenge with clarity and focus.",
       size: 'big1'
     }
   ];
@@ -382,15 +397,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const athleteImages = [
     { src: 'assets/images/Three-Celebration.png', text: 'The Athlete', size: 'athletesmall1' },
-    { src: 'assets/images/Stevenson.png', text: 'Training. Strength. Mobility.', size: 'athletesmall2' },
-    { src: 'assets/images/Villinova-Freshmen.png', text: 'Reps. Footwork. Shot volume.', size: 'athletesmall3' },
-    { src: 'assets/images/Player-Of-The-Year.png', text: 'Game day focus + recovery.', size: 'athletebig1' },
-    { src: 'assets/images/Brunson-Draft.png', text: '2018', size: 'athletebig2' },
-    { src: 'assets/images/22-PLayoffs.png', text: "2022 playoff run", size: 'athletebig3' },
-    { src: 'assets/images/Free-Agent.png', text: "Signed to the Knicks", size: 'athletebig4'},
-    { src: 'assets/images/All-Star-Jersey.png', text: "All Star jersey", size: 'athletebig5'},
-    { src: 'assets/images/24-25poster.png', text: "2024-2025 knicks run", size: "athleteBig6"},
-    { src: 'assets/images/Clutch.png', text: "Clutch Player of the Year", size: "athleteBig7"}
+    { src: 'assets/images/Stevenson.png', text: 'Jalen Brunson’s dominance at Stevenson High School was undeniable, leading his team to the 2015 Illinois 4A state championship. Named Illinois Mr. Basketball, he showcased elite leadership, scoring, and poise, setting the stage for future greatness.', size: 'athletesmall2' },
+    { src: 'assets/images/U19-World-Cup.png', text: "Representing Team USA at the U19 World Cup, Brunson led with maturity beyond his years, guiding his squad to a gold medal. His stellar performance earned him tournament MVP, cementing his reputation as a rising international star.", size: 'athletesmall2.5'},
+    { src: 'assets/images/Villinova-Freshmen.png', text: "In his freshman season at Villanova, Brunson’s court vision, decision-making, and composure under pressure played key roles in the Wildcats’ NCAA Championship run. His ability to contribute immediately made him a cornerstone of the program’s success.", size: 'athletesmall3' },
+    { src: 'assets/images/Player-Of-The-Year.png', text: "By 2018, Brunson reached college basketball’s summit: National Player of the Year and a second NCAA title. His blend of scoring, leadership, and relentless work ethic made him one of Villanova’s most decorated players ever.", size: 'athletebig1' },
+    { src: 'assets/images/Brunson-Draft.png', text: "Selected 33rd overall by the Dallas Mavericks, Brunson entered the NBA with a chip on his shoulder. Draft night marked the start of his professional journey, carrying the same work ethic that defined his earlier successes.", size: 'athletebig2' },
+    { src: 'assets/images/22-PLayoffs.png', text: "In the 2022 NBA Playoffs with Dallas, Brunson delivered breakout performances, including a 41-point game against Utah. His poise, scoring versatility, and leadership on the big stage earned him league-wide respect and changed his career trajectory.", size: 'athletebig3' },
+    { src: 'assets/images/Free-Agent.png', text: "Signing with the Knicks in 2022, Brunson instantly transformed the team’s culture. His leadership, clutch play, and ability to command the offense have reenergized Madison Square Garden, making New York a serious playoff contender again.", size: 'athletebig4'},
+    { src: 'assets/images/All-Star-Jersey.png', text: "Brunson’s recent seasons have elevated him into All-Star and All-NBA conversations. His elite footwork, mid-range mastery, and leadership on both ends have established him as one of the league’s premier point guards and consistent difference-makers.", size: 'athletebig5'},
+    { src: 'assets/images/24-25poster.png', text: "In playoff runs at Madison Square Garden, Brunson thrives under pressure. His ability to hit clutch shots, control tempo, and embrace the roaring New York crowd has made him a fan favorite and postseason leader.", size: "athleteBig6"},
+    { src: 'assets/images/Clutch.png', text: "Brunson’s fearless late-game performances have earned him recognition as one of the league’s most reliable closers. The Clutch Player Award honors his ability to rise in decisive moments, delivering for his team when it matters most.", size: "athleteBig7"}
   ];
 
   if (athleteSection) {
@@ -432,6 +448,27 @@ document.addEventListener('DOMContentLoaded', () => {
       const x = -maxX * progress;
       track.style.transform = `translate3d(${x}px, 0, 0)`;
     }
+
+    // tune this: how many vertical pixels to scroll per 1px horizontal movement
+const SCROLL_PER_PX = 1.6; // increase -> slower, decrease -> faster
+
+function sizeAthleteTrack() {
+  const sectionParent = document.querySelector('.AtheleteSticky_Parent');
+  const sticky = sectionParent?.querySelector('.AtheleteSticky');
+  const track = sticky?.querySelector('.AtheleteScroll_section');
+  if (!sectionParent || !sticky || !track) return;
+
+  const maxX = Math.max(0, track.scrollWidth - window.innerWidth);
+  const targetHeightPx = window.innerHeight + maxX * SCROLL_PER_PX;
+
+  // lock the parent height so progress maps 0..1 over the computed distance
+  sectionParent.style.height = `${targetHeightPx}px`;
+}
+
+window.addEventListener('load', sizeAthleteTrack);
+window.addEventListener('resize', sizeAthleteTrack);
+sizeAthleteTrack();  // call once after slides are appended
+
 
     window.addEventListener('scroll', transformAthlete);
     window.addEventListener('resize', transformAthlete);

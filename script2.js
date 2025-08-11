@@ -209,6 +209,21 @@ document.addEventListener('DOMContentLoaded', () => {
       ManSection.appendChild(container);
     });
 
+    const SCROLL_PER_PX_MAN = 1.6; // same as The Athlete for equal speed
+  function sizeManTrack() {
+    const sectionParent = document.querySelector('.ManSticky_Parent');
+    const sticky = sectionParent?.querySelector('.ManSticky');
+    const track = sticky?.querySelector('.ManScroll_section');
+    if (!sectionParent || !sticky || !track) return;
+
+    const maxX = Math.max(0, track.scrollWidth - window.innerWidth);
+    const targetHeightPx = window.innerHeight + maxX * SCROLL_PER_PX_MAN;
+    sectionParent.style.height = `${targetHeightPx}px`;
+  }
+  window.addEventListener('load', sizeManTrack);
+  window.addEventListener('resize', sizeManTrack);
+  sizeManTrack();
+
     function transformMan() {
       const sectionParent = document.querySelector('.ManSticky_Parent');
       if (!sectionParent) return;

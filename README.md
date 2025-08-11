@@ -1,17 +1,17 @@
-# 🏀 Jalen Brunson Tribute Website
+#  Jalen Brunson Tribute Website
 
 A fully custom, interactive tribute website for NBA star **Jalen Brunson**, inspired by the visual style and scroll animations of [LeBronJames.com](https://www.lebronjames.com/).  
 The site blends storytelling, multimedia, and smooth scrolling effects to showcase Brunson’s career, philanthropy, business ventures, and personal life.
 
 ---
 
-## ✨ Features
+##  Features
 
-### 🎥 Hero & Highlight Video
+###  Hero & Highlight Video
 - Landing section with a **hero image** transitioning to a **scroll-zoom highlight video**.
 - Smooth video scaling effect based on scroll position.
 
-### 🏀 **The Athlete** Horizontal Scroll
+###  **The Athlete** Horizontal Scroll
 - Chronicles Brunson’s basketball journey:
   - Stevenson High School
   - USA Basketball U19 World Cup
@@ -23,7 +23,7 @@ The site blends storytelling, multimedia, and smooth scrolling effects to showca
   - Clutch Player Award
 - Slow horizontal scroll speed for immersive storytelling.
 
-### 🤝 **The Philanthropist**
+###  **The Philanthropist**
 - Horizontal scroll covering Brunson’s charitable work:
   - Second Round Foundation
   - Covenant House partnerships
@@ -31,14 +31,14 @@ The site blends storytelling, multimedia, and smooth scrolling effects to showca
   - Golf Charity Event
 - Black content boxes with images and descriptive captions.
 
-### 💼 **The Businessman**
+###  **The Businessman**
 - Brand partnerships & endorsements:
   - Bose
   - Faherty
   - Nike
 - Horizontal scroll with responsive image sizes.
 
-### 👤 **The Man**
+###  **The Man**
 - Personal and off-court highlights:
   - Relationship with Jordyn Brunson
   - Mentorship from Jay Wright
@@ -48,7 +48,7 @@ The site blends storytelling, multimedia, and smooth scrolling effects to showca
   - Ice bath recovery ritual
 - Slow scroll for narrative pacing.
 
-### 📱 Socials Section
+###  Socials Section
 - Centered clickable icons linking to:
   - Instagram
   - Twitter / X
@@ -57,7 +57,7 @@ The site blends storytelling, multimedia, and smooth scrolling effects to showca
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **HTML5** – semantic structure
 - **CSS3** – custom styling, responsive design

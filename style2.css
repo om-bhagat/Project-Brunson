@@ -945,3 +945,89 @@ align-items: stretch;
   max-width: 60ch;          /* readable line length */
 }
 
+/*Socials*/
+
+.socials-section {
+  background: #000;
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.socials-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
+
+.socials-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.social-btn {
+  display: inline-block;
+  align-items: center;
+  gap: 10px;
+  background: #111;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+  position: relative;
+  overflow: hidden;
+
+}
+
+.social-btn img {
+  display: block;
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.social-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,0.6);
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.social-icon img {
+  width: 50px;
+  height: 50px;
+}
+
+.social-btn:hover img {
+  filter: brightness(0.6);
+}
+
+.social-btn:hover .social-icon {
+  background: rgba(0,0,0,0.8);
+  transform: translate(-50%, -50%) scale(1.1);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.social-btn.instagram:hover {
+  background: #e1306c;
+  transform: scale(1.05);
+}
+
+.social-btn.twitter:hover {
+  background: #1da1f2;
+  transform: scale(1.05);
+}
+
+.social-btn.podcast:hover {
+  background: #8e44ad;
+  transform: scale(1.05);
+}

@@ -43,17 +43,17 @@ document.addEventListener('DOMContentLoaded', () => {
         label.textContent = ' In 2018, Brunson created the annual Jalen Brunson Skills Academy to raise funds for the Stevenson Foundation.';
       } else if (img.includes('Brunson-Covenant')) {
         image.style.width = '60%';
-        label.textContent = 'In early 2023, Brunson has worked with Covenant House as a founding member and chair of the Player Ambassador Council. His family has also hosted Thanksgiving dinners to serve meals alongside the residents.';
+        label.textContent = 'In early 2023, Brunson worked with Covenant House as a founding member and chair of the Player Ambassador Council. His family has also hosted Thanksgiving dinners to serve meals alongside the residents.';
       } else if (img.includes('Brunson-Stevenson')) {
         image.style.width = '60%';
-        label.textContent = 'In 2022, Brunson has provided tools and necessities for financially under-resourced students. These donations expand the access from just healthy food and nutrition to also atheltic wear, shoes, and accessories.';
+        label.textContent = 'In 2022, Brunson provided tools and necessities for financially under-resourced students. These donations expand the access from just healthy food and nutrition to also atheltic wear, shoes, and accessories.';
       } else if (img.includes('Second-Round-Foundation')) {
         image.style.width = '30%';
-        label.textContent = "In 2018, Brunson's Second Round Foundation empowers underserved youth by supporting education, personal development, and community enrichment through scholarships, mentorship, and access to essential resoucres.";
+        label.textContent = "In 2018, Brunson's Second Round Foundation empowered underserved youth by supporting education, personal development, and community enrichment through scholarships, mentorship, and access to essential resoucres.";
       } else if (img.includes('Golf-Charity')) {
         image.classList.add('scroll-image');
         image.style.width = '60%';
-        label.textContent = "In 2023, Jalen Brunson's Annual Golf Charity Event raises funds for his Second Round Foundation, bringing together supporters to enjoy golf while supporting youth education, mentorship, and community programs in underserved areas.";
+        label.textContent = "In 2023, Jalen Brunson's Annual Golf Charity Event raised funds for his Second Round Foundation, bringing together supporters to enjoy golf while supporting youth education, mentorship, and community programs in underserved areas.";
       } else {
         image.style.width = '60%';
         label.textContent = 'Additional Coverage';
@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     {
       src: 'assets/images/BrunsonXBose.png',
-      text: 'In 2023, Jalen Brunson partners with Bose as a brand ambassador, promoting products on social media, attending sponsored events, and gifting Bose earbuds to teammates, showcasing the collaboration through endorsements, public appearances, and goodwill gestures.',
+      text: 'In 2023, Jalen Brunson began partnering with Bose as a brand ambassador, promoting products on social media, attending sponsored events, and gifting Bose earbuds to teammates, showcasing the collaboration through endorsements, public appearances, and goodwill gestures.',
       size: 'small2'
     },
     {
@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     {
       src: 'assets/images/NikeXBrunson.png',
-      text: "Jalen Brunson partners with Nike, wearing their gear—especially Kobe Bryant shoes—in games, joining marketing campaigns, and earning performance bonuses while reinforcing a strong, loyal brand connection.",
+      text: "In 2023, Jalen Brunson partnered with Nike, wearing their gear—especially Kobe Bryant shoes—in games, joining marketing campaigns, and earning performance bonuses while reinforcing a strong, loyal brand connection.",
       size: 'big1'
     }
   ];
@@ -161,7 +161,7 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     {
       src: 'assets/images/JordynBrunson.png',
-      text: 'In 2023, Jordyn Brunson has been a constant source of support, grounding Jalen through every high and low. Their relationship reflects mutual respect, understanding, and shared values, giving him balance and perspective both on and off the court.',
+      text: 'Since 2023, Jordyn Brunson has been a constant source of support, grounding Jalen through every high and low. Their relationship reflects mutual respect, understanding, and shared values, giving him balance and perspective both on and off the court.',
       size: 'small2'
     },
     {
